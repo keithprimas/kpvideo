@@ -20,11 +20,15 @@ const config = {
     extend: {
       colors: {
         dark: {
-          1: '#1C1F2E',
+          1: '#db6a00',
           2: '#161925',
         },
         blue: {
           1: '#0E78F9',
+        },
+        orange: {
+          1: '#c45f00',
+          2: '#ff6f00',
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
