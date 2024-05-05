@@ -19,15 +19,19 @@ export default function RootLayout({
     <html lang="en">
       <ClerkProvider
       appearance={{
+        layout: {
+          socialButtonsVariant: 'iconButton',
+          socialButtonsPlacement: 'top'
+        },
         variables: {
-          colorBackground: '#ffb981',
+          colorBackground: '#bdbdea',
           colorText: '#000',
           fontSize: '16px',
-          colorPrimary: '#8e4307',
-          colorInputBackground: '#ffe2ca'
+          colorPrimary: '#fff',
+          colorInputBackground: '#fff'
         }
       }}>
-          <body className={`${inter.className} bg-orange-1`}>{children}</body>
+          <body className={`${inter.className} bg-blue-1`}>{children}</body>
       </ClerkProvider>
     </html>
   );

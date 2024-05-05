@@ -19,55 +19,30 @@ const config = {
     },
     extend: {
       colors: {
-        dark: {
-          1: '#db6a00',
-          2: '#161925',
-        },
         blue: {
-          1: '#0E78F9',
+          1: '#000033',
+          2: '#020264',
+          3: '#bdbdea',
+          4: '#3A3AE5',
         },
-        orange: {
-          1: '#c45f00',
-          2: '#ff6f00',
+        sky: {
+          1: '#c9ddff',
         },
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        box: {
+          1: '#AE5EFF',
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        yellow: {
+          1: '#ffff77',
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        pink: {
+          1: '#ff7777',
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+        teal: {
+          1: '#3fdbcb',
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      backgroundImage: {
+        hero: "url('/images/hero-background.png')"
       },
       keyframes: {
         "accordion-down": {
