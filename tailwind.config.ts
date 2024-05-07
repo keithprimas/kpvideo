@@ -30,15 +30,9 @@ const config = {
         },
         box: {
           1: '#AE5EFF',
-        },
-        yellow: {
-          1: '#ffff77',
-        },
-        pink: {
-          1: '#ff7777',
-        },
-        teal: {
-          1: '#3fdbcb',
+          2: '#5effae',
+          3: '#f5813e',
+          4: '#C891FF',
         },
       },
       backgroundImage: {
