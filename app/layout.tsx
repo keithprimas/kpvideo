@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import '@stream-io/video-react-sdk/dist/css/styles.css';
 
 import { Toaster } from "@/components/ui/toaster";
 
@@ -30,7 +31,7 @@ export default function RootLayout({
           colorBackground: '#bdbdea',
           colorText: '#000',
           fontSize: '16px',
-          colorPrimary: '#fff',
+          colorPrimary: '#3A3AE5',
           colorInputBackground: '#fff'
         }
       }}>
