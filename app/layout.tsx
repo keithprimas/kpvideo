@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import '@stream-io/video-react-sdk/dist/css/styles.css';
+import 'react-datepicker/dist/react-datepicker.css';
 
 import { Toaster } from "@/components/ui/toaster";
 
@@ -12,6 +13,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Meeteor",
   description: "A video conferencing app",
+  icons: {
+    icon: '/icons/logo.svg'
+  }
 };
 
 export default function RootLayout({
