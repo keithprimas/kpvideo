@@ -39,7 +39,8 @@ const config = {
         },
       },
       backgroundImage: {
-        hero: "url('/images/hero-background.png')"
+        hero: "url('/images/hero-background.png')",
+        clerk: "url('/images/background.png')"
       },
       keyframes: {
         "accordion-down": {
