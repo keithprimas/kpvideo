@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {
+        black: {
+          1: '#2b2a2a'
+        },
         blue: {
           1: '#000033',
           2: '#020264',
