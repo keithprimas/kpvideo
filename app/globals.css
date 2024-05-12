@@ -68,6 +68,12 @@
   width: 70px;
 }
 
+.cl-internal-1lloux5 {
+  grid-template-columns: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .cl-dividerLine {
   background: #252a41;
   height: 2px;
