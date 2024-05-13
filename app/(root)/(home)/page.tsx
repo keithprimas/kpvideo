@@ -4,7 +4,10 @@ import dayjs from 'dayjs'; // Import Day.js
 
 const Home = () => {
   // Get current date and time using Day.js
-  const now = dayjs();
+  let now = dayjs();
+  // Subtract 4 hours from the current time
+  now = now.subtract(4, 'hour');
+
   const time = now.format('hh:mm A'); // Format time
   const date = now.format('dddd, MMMM D, YYYY'); // Format date
 
