@@ -1,11 +1,12 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
-import React from 'react'
-
+import React from 'react';
+import dayjs from 'dayjs'; // Import Day.js
 
 const Home = () => {
-  const now = new Date();
-  const time = now.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
-  const date = (new Intl.DateTimeFormat(undefined, {dateStyle: 'full'})).format(now);
+  // Get current date and time using Day.js
+  const now = dayjs();
+  const time = now.format('hh:mm A'); // Format time
+  const date = now.format('dddd, MMMM D, YYYY'); // Format date
 
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
@@ -17,11 +18,9 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-
-      <MeetingTypeList />
+        <MeetingTypeList />
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;
