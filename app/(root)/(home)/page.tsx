@@ -3,13 +3,10 @@ import React from 'react';
 import dayjs from 'dayjs'; // Import Day.js
 
 const Home = () => {
-  // // Get current date and time using Day.js
-  // let now = dayjs();
-  // // Subtract 4 hours from the current time
-  // now = now.subtract(4, 'hour');
-
-  // const time = now.format('hh:mm A'); // Format time
-  // const date = now.format('dddd, MMMM D, YYYY'); // Format date
+  // Get current date and time using Day.js
+  const now = dayjs();
+  const time = now.format('hh:mm A'); // Format time
+  const date = now.format('dddd, MMMM D, YYYY'); // Format date
 
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
@@ -17,7 +14,7 @@ const Home = () => {
             <div className='flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11'>
                 <div className='flex flex-col gap-2'>
                   <h1 className='text-4xl font-extrabold lg:text-7xl'>Let's get started!</h1>
-                  {/* <p className='text-lg font-medium text-sky-1 lg:text-2xl'>{date}</p> */}
+                  <p className='text-lg font-medium text-sky-1 lg:text-2xl'></p>
                 </div>
             </div>
         </div>
