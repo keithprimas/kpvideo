@@ -50,3 +50,22 @@ export const useGetCalls = () => {
 
   return { endedCalls, upcomingCalls, callRecordings: calls, isLoading }
 };
+
+/*
+  This custom hook, useGetCalls, retrieves and manages video call data using the Stream API.
+  It utilizes the useUser hook from @clerk/nextjs to get the current user and the useStreamVideoClient hook to get the Stream video client.
+  The hook maintains two pieces of state: calls (an array of Call objects) and isLoading (a boolean indicating the loading status).
+  
+  The useEffect hook defines an asynchronous function, loadCalls, which queries the Stream API for calls associated with the current user.
+  The query filters calls that have a start time and are either created by the user or include the user as a member.
+  The results are sorted by the start time in descending order.
+  
+  The loadCalls function sets the isLoading state to true while the query is in progress and resets it to false once the query completes.
+  If the query is successful, the calls state is updated with the retrieved calls.
+  
+  The hook also defines two derived states: endedCalls and upcomingCalls.
+  endedCalls filters calls that have either started or ended before the current time.
+  upcomingCalls filters calls that are scheduled to start after the current time.
+  
+  The hook returns an object containing endedCalls, upcomingCalls, callRecordings (the original calls array), and isLoading.
+*/
